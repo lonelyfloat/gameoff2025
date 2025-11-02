@@ -1,0 +1,4 @@
+-Iinclude
+-Isrc
+-Iframework
+-std=c23
