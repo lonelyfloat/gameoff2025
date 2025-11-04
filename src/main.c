@@ -21,7 +21,7 @@ const int initialScreenHeight = 720;
 ReloadCallbacks calls;
 void* handle = NULL;
 
-bool editorMode = true;
+bool editorMode = false;
 
 int main(void) {
     #if defined(DYNAMIC_LIB)
