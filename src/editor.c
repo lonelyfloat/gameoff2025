@@ -64,7 +64,7 @@ void InitState(void) {
 }
 
 void Save(char* file) {
-    SaveSceneToFile(&ecs, &firstScene, file);
+    SaveWorldAsScene(&ecs, &firstScene, file);
 }
 
 void Load(char* file) {
