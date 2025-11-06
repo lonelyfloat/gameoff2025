@@ -35,6 +35,8 @@ const Color background = (Color){0x17,0x17,0x17,0xFF};
 Font pixelOperator;
 bool fontLoaded = false;
 
+const float scale = 0.7;
+
 void Init(void) {
     printf("Initializing editor...\n");
     InitECS(&ecs, 100, COMPONENT_COUNT);
@@ -64,7 +66,7 @@ void InitState(void) {
 }
 
 void Save(char* file) {
-    SaveWorldAsScene(&ecs, &firstScene, file);
+    SaveWorldAsScene(&ecs, &firstScene, "assets/minigame1");
 }
 
 void Load(char* file) {
@@ -94,7 +96,7 @@ void UpdateDrawFrame(void) {
                 "", 32 * camera.zoom, 1, NULL);
 
         BeginMode2D(camera);
-        DrawRectangleLines(0,0,screenWidth,screenHeight, YELLOW);
+        DrawRectangleLines(0,0,screenWidth*scale,screenHeight*scale, YELLOW);
         DrawDebugColliders(&ecs);
         for(int i = 0; i < ecs.blocks[POSITION_COMPONENT].count; ++i) {
             Color c = foreground;

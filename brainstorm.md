@@ -25,8 +25,8 @@
     * Designing sound effects for old cartoons (Foley style???) (running over to old pianos, anvils, etc.)
 
 ## FINAL IDEA:
-* You're a sound designer for a variety of idiosyncratic electronic pop stars
+ * You're a sound designer for a variety of idiosyncratic electronic pop stars
     - you have to decode what they mean by things (maybe use colors to convey??)
-* WarioWare-inspired game where each 'level' is a challenger who wants a specific type of sound
-* You slowly reach it by doing a bunch of little minigames
-    * e.g. filter minigame, overdrive minigame, etc.
+ * WarioWare-inspired game where each 'level' is a challenger who wants a specific type of sound
+ * You slowly reach it by doing a bunch of little minigames
+    - e.g. filter minigame, overdrive minigame, etc.

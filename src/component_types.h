@@ -3,18 +3,20 @@
 
 #include "component.h"
 
-typedef struct Test {
-    float param;
-} Test;
+typedef struct SceneFrame {
+    float frameScale;
+}SceneFrame; 
 
+// init(
 #define COMPONENTS(init)\
-    init(Test, TEST)\
+    init(SceneFrame, SCENE_FRAME)
 
-#define TEST_UI_FIELDS(X)\
-    X(0,param,FLOAT_VAR,0,200)
+#define SCENE_FRAME_UI_FIELDS(X)\
+    X(0, frameScale, FLOAT_VAR, 0, 1)
+
 
 #define TAGS(init)\
-    init(ORBIT_CENTER)\
+    init(FLOOR_COLLIDER)\
 
 GEN_COMPONENT_TABLE(COMPONENTS, TAGS)
 
